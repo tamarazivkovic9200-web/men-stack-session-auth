@@ -11,6 +11,7 @@
 <body>
     <% if (user) { %>
         <h1>Welcome to the app, <%= user.username %>!</h1>
+        <a href="/auth/sign-out">Sign Out</a>
     <% } else { %>
         <h1>Welcome to the app, guest.</h1>
         <div>
@@ -18,7 +19,12 @@
                 <a href="/auth/sign-up">Sign up</a> or <a href="/auth/sign-in">sign in</a>.
             </p>
         </div>
+        
+        <p><a href="/vip-lounge">Get into the VIP Users Only lounge!</a></p>
+
     <% } %>
+
+    
 </body>
 
 </html>
